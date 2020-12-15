@@ -1,0 +1,16 @@
+body {
+  font-family: Verdana, Arial,sans-serif;
+}
+h1 {
+  color: white;
+  background-color: #b48af6;
+}
+h1.clicked {
+  color: #61b3e7;
+  background-color: #e6e8fa;
+}
+h2 {
+  color: #FFB695;
+  margin-left: 40px;
+  border-bottom: 4px dotted black;
+}

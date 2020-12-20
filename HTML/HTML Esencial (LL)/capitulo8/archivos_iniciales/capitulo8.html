@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Capítulo 8 - curso HTML</title>
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,100,700' rel='stylesheet' type='text/css'>
+    
+    <link href="estilos.css" rel="stylesheet" />
+     
+    <script src="main.js" type="text/javascript"></script>
+    
+</head>
+<body onload="init()">
+    <!-- este es mi primer ejemplo con HTML  -->
+
+    <header>
+        <nav></nav>
+    </header>
+    
+    <aside>
+        <nav></nav>
+    </aside>
+    
+    <section>
+        <h1>Formularios</h1>
+        <form action="http://midominio.com/miservicioweb.php" method="post">
+            <fieldset>
+                <legend>Datos de usuario</legend>
+                <label for="nombre" >Nombre</label>
+                <input name="nombre" id="nombre" type="text" placeholder="escribe tu nombre" required autofocus readonly/>
+                <br/>
+                <label for="apellidos" >Apellido</label>
+                <input name="apellidos" id="apellidos" type="text" placeholder="primer apellido" disabled />
+                <br/>
+                <label for="edad" >Edad</label>
+                <input name="edad" id="edad" type="number" min="18" max="99" value="18"/>
+                <br/>
+                <label for="clave" >Contraseña</label>
+                <input name="clave" id="clave" type="password" placeholder="contraseña" />
+                <br/>
+                <label for="mail" >Email</label>
+                <input name="mail" id="mail" type="email"/>
+                 <br/>
+                <label for="fecha" >Fecha</label>
+                <input name="fecha" id="fecha" type="date" />
+                <br/>
+                <input type="file" />
+                <br/>
+                <input type="hidden" name="sitio" value="contaminacion"/>
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos></legend>
+                <textarea wrap="hard">Oh Doc, am I glad to see you! Go out the front door! But it doesn't open, there's no doorknob! Press your thumb to the plate! What plate?</textarea>
+                
+                <br/>
+                
+                <label for="envio_email">Enviar mails</label>
+                <input name="envio_mail" id="envio_mail" type="checkbox" />
+                <label for="llamar">Llamar por teléfono</label>
+                <input name="llamar" id="llamar" type="checkbox" checked />
+                
+                <br/>
+                
+                <label for="rojo">Rojo</label>
+                <input name="color" id="rojo" value="rojo" type="radio"/>
+                <label for="verde">Verde</label>
+                <input name="color" id="verde" value="verde" type="radio"/>
+                <label for="azul">Azul</label>
+                <input name="color" id="azul" value="azul" type="radio"/>
+                
+                <br/>
+                
+                <label for="paises">Nación</label>
+                <select name="paises" id="paises">
+                    <optgroup label="Europa">
+                        <option value="es">España</option>
+                        <option value="fr" selected>Francia</option>
+                    </optgroup>
+                    <optgroup label="América">
+                        <option value="ar">Argentina</option>
+                    </optgroup>
+                </select>
+                
+                <label for="ciudad">Ciudad</label>
+                <input name="ciudad" id="ciudad" list="nombre_ciudades"/>
+                <datalist id="nombre_ciudades">
+                    <option value="León"/>
+                    <option value="Cozumel"/>
+                    <option value="Mérida"/>
+                    <option value="Cancún"/>
+                    <option value="CDMX"/>
+                </datalist>
+                
+            </fieldset>
+            
+            <input type="submit" value="Enviar form" />
+            <input type="reset" value="Borrar" />
+            <button type="submit">Enviar con button</button>
+        </form>
+        
+    </section>
+    
+    <footer>
+    </footer>
+</body>
+</html>

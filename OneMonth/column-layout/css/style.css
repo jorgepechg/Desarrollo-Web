@@ -22,6 +22,19 @@ Developed @ One Month in NYC
 	clear: both;
 }
 
+img {
+    float: right;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.alignright {
+    float: right;
+    margin: 0 0 15px 15px;
+}
 
 
 /*----------------------------------------------------------------------------- 
@@ -40,6 +53,15 @@ Developed @ One Month in NYC
 
 #main {
     background: SkyBlue;
+    padding: 50px;
+    width: 700px;
+    float: left;
+}
+
+#sidebar {
+    background: pink;
+    width: 300px;
+    float: left;
     padding: 50px;
 }
 
